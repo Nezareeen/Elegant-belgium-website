@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500&display=swap');
+
+/* Product Hero Section */
+.product-hero {
+  height: 40vh;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.product-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(196, 167, 71, 0.1) 0%, transparent 60%),
+             radial-gradient(circle at 70% 70%, rgba(196, 167, 71, 0.1) 0%, transparent 60%);
+  z-index: 1;
+}
+
+.product-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.product-hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: 200;
+  letter-spacing: 3px;
+  color: #f5f5f5;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.category-label {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  color: #c4a747;
+  font-weight: 400;
+}
+
+/* Main Product Section */
+.product-main {
+  padding: 6rem 0;
+  background-color: white;
+}
+
+.content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.price-tag {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #1a1a1a;
+  font-weight: 300;
+}
+
+.purchase-cta {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: #1a1a1a;
+  text-decoration: none;
+  border: 1px solid #c4a747;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.purchase-cta:hover {
+  background-color: #c4a747;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.product-description {
+  margin-bottom: 4rem;
+}
+
+.intro-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+}
+
+.long-description {
+  font-family: 'Montserrat', sans-serif;
+  color: #666;
+  line-height: 1.8;
+}
+
+.long-description p {
+  margin-bottom: 1.5rem;
+}
+
+.product-features {
+  margin-bottom: 4rem;
+}
+
+.product-features h2,
+.product-usage h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.product-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-features li {
+  font-family: 'Montserrat', sans-serif;
+  color: #666;
+  padding: 0.8rem 0;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.product-features li::before {
+  content: '•';
+  color: #c4a747;
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.product-usage {
+  margin-bottom: 4rem;
+}
+
+.product-usage p {
+  font-family: 'Montserrat', sans-serif;
+  color: #666;
+  line-height: 1.8;
+}
+
+/* Related Products Section */
+.related-products {
+  padding: 6rem 0;
+  background-color: #f8f8f8;
+}
+
+.related-products h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.related-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.related-card:hover {
+  transform: translateY(-5px);
+}
+
+.related-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+  font-weight: 400;
+}
+
+.related-card p {
+  font-family: 'Montserrat', sans-serif;
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.related-price {
+  font-family: 'Montserrat', sans-serif;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.related-cta {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: transparent;
+  color: #1a1a1a;
+  text-decoration: none;
+  border: 1px solid #c4a747;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.related-cta:hover {
+  background-color: #c4a747;
+  color: white;
+}
+
+/* Back Section */
+.back-section {
+  padding: 3rem 0;
+  background-color: white;
+}
+
+.back-to-shop {
+  font-family: 'Montserrat', sans-serif;
+  color: #1a1a1a;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.back-to-shop:hover {
+  color: #c4a747;
+}
+
+/* Product Not Found */
+.product-not-found {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.product-not-found h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+  font-weight: 300;
+}
+
+/* Quantity Selector */
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.quantity-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #2c2c2c;
+  background: transparent;
+  color: #2c2c2c;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-btn:hover {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+.quantity-value {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  color: #2c2c2c;
+  min-width: 2rem;
+  text-align: center;
+}
+
+/* Notification */
+.notification {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #2c2c2c;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  animation: slideIn 0.3s ease-out;
+  z-index: 1000;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .product-header {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .related-grid {
+    grid-template-columns: 1fr;
+  }
+} 

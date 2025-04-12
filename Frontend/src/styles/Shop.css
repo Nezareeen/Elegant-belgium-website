@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
+
+.shop-page {
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+/* Hero Section */
+.shop-hero {
+  height: 60vh;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+              url('/images/shop-hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-content h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.hero-content p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+/* Featured Product Section */
+.featured-product {
+  padding: 6rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.featured-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-label {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #9a8a78;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.featured-content h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: #2c2c2c;
+}
+
+.featured-content p {
+  font-family: 'Montserrat', sans-serif;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.featured-price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: #9a8a78;
+  margin-bottom: 2rem;
+}
+
+/* Featured Product Actions */
+.featured-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.featured-cta {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background-color: transparent;
+  color: #2c2c2c;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+  border: 1px solid #2c2c2c;
+  cursor: pointer;
+}
+
+.featured-cta:hover {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+.featured-cta.add-to-cart {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  border: none;
+}
+
+.featured-cta.add-to-cart:hover {
+  background-color: #9a8a78;
+}
+
+/* Main Shop Section */
+.main-shop {
+  padding: 4rem 2rem;
+  background-color: #fafafa;
+}
+
+/* Category Filter */
+.category-filter {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.category-filter button {
+  background: none;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #666;
+  margin: 0 1.5rem;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.category-filter button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #9a8a78;
+  transition: width 0.3s ease;
+}
+
+.category-filter button:hover::after,
+.category-filter button.active::after {
+  width: 100%;
+}
+
+.category-filter button.active {
+  color: #2c2c2c;
+}
+
+/* Products Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  color: #2c2c2c;
+  margin-bottom: 1rem;
+}
+
+.product-card p {
+  font-family: 'Montserrat', sans-serif;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.product-price {
+  font-family: 'Montserrat', sans-serif;
+  color: #9a8a78;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-cta {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: transparent;
+  border: 1px solid #2c2c2c;
+  color: #2c2c2c;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+}
+
+.product-cta:hover {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+/* Product Actions */
+.product-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.product-cta.add-to-cart {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.product-cta.add-to-cart:hover {
+  background-color: #9a8a78;
+}
+
+/* Care Guide Section */
+.care-guide {
+  padding: 6rem 2rem;
+  background-color: #2c2c2c;
+  color: #ffffff;
+  text-align: center;
+}
+
+.care-guide h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.care-guide p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.guide-cta {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+}
+
+.guide-cta:hover {
+  background-color: #ffffff;
+  color: #2c2c2c;
+}
+
+/* Notification */
+.notification {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #2c2c2c;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  animation: slideIn 0.3s ease-out;
+  z-index: 1000;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .shop-hero {
+    height: 50vh;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .featured-content h2 {
+    font-size: 2rem;
+  }
+
+  .category-filter button {
+    margin: 0 1rem;
+    font-size: 0.9rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .product-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .shop-hero {
+    height: 40vh;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .category-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .category-filter button {
+    margin: 0;
+  }
+
+  .featured-content,
+  .care-guide {
+    padding: 4rem 1rem;
+  }
+} 

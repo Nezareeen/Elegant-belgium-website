@@ -29,7 +29,6 @@ Elegant Belgium is your destination for luxury bag mending and premium care acce
 
 ## 🖼️ Preview
 
-<<<<<<< HEAD
 ![Homepage](./assets/HomePage.png)
 ![Specialities](./assets/Specialities.png)
 ![Shop](./assets/ShopPage.png)
